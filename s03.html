@@ -14,8 +14,19 @@
         <img src="https://tajangi.ir/img/ManTechnologist.svg" style="display: inline; width: 1.5rem; height: 1.5rem;"
             alt="">
         Front-End Developer</span>
+        <button id="btn1" 
+        style="margin-right: auto ; margin-left: auto; display: block; background-color: #867dff; border-radius: 9px; padding: 8px;"
+        >Change</button>
         <script>
-            alert("Loading ...")
+            // alert("Loading ...")
+            let obj = [];
+            document.getElementById('btn1').onclick = ()=>{
+                let name = prompt("Your Name : ")
+                let JobTitle = prompt("Your JobTitle : ")
+                document.getElementById("Fullname").innerText = name
+                document.getElementById("Job").innerText = JobTitle
+
+            }
         </script>
 </body>
 <style>
